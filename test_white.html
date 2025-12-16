@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>双按钮跳转页面</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .button-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 095);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 01);
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 03s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 02);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 03);
+        }
+        
+        .btn:active {
+            transform: translateY(-1px);
+        }
+        
+        .btnsecondary {
+            background: linear-gradient(45deg, #2196F3, #1976D2);
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <h1>请选择要访问的链接</h1>
+        <a href="https://www.example.com" class="btn" target="_blank">跳转到链接1</a>
+        <a href="https://www.google.com" class="btn secondary" target="_blank">跳转到链接2</a>
+    </div>
+</body>
+</html>
